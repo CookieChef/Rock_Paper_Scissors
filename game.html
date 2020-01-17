@@ -31,51 +31,36 @@
 
 <body>
 
-    <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-4"> Welcome!</h1>
-            <p class="lead">This is a simple rock, paper, scissors game. Do you think you can beat the computer?</p>
-            <hr class="my-4">
-            <p>Let's see what you got!</p>
-        </div>
+    <div class="nav justify-content-center" id="nav">
+        Welcome to Rock-Paper-Scissors
     </div>
+    <hr>
 
     <div class="container">
         
         <div class="choices">
+            <h4>Chose your weapon:</h4>
+            <hr>
             <div class="choice" id="r">
                 <img src="images/rock.png">
-            </div> 
+            </div>
             <div class="choice" id="p">
                 <img src="images/paper.png">
             </div>
             <div class="choice" id="s">
                 <img src="images/scissors.png">
-            </div>  
-               </div>
-        <!-- <div class="row">
-            <div class="col-sm">
-                <div class="card" id="card">
-                    <div class="card-body">
-                        <p id="wins"> </p>
-                        <p id="lost"> </p>
-                        <p id="ties"> </p>
-                    </div>
-                </div>      
-        </div>
-
-        <div class="col-sm">
-            <div class="card" id="card">
-                <div class="card-body">
-                    <p id="userChoice"> </p>
-                    <p id="computerChoice"> </p>
-                </div>
             </div>
         </div>
 
-    </div> -->
+        <div class="scoreBoard">
+            <p id="wins"> </p>
+            <p id="lost"> </p>
+            <p id="ties"> </p>
+            <p id="userChoice"> </p>
+            <p id="computerChoice"> </p>
+        </div>
 
-    <script src="game.js"></script>
+        <script src="game.js"></script>
 </body>
 
 </html>

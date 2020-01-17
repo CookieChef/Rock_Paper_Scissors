@@ -1,10 +1,10 @@
 body {
     background-color: rgb(43, 47, 53);
     color:rgb(198, 201, 206);
-}
-.container {
     font-family: 'IM Fell Great Primer SC', serif;
-    
+}
+#nav {
+    font-size: 40px;
 }
 
 .jumbotron {
