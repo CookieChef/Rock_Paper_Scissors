@@ -15,11 +15,13 @@ var userChoiceText = document.getElementById("userChoice");
 var computerChoiceText = document.getElementById("computerChoice");
 
 document.onkeyup = function (event) {
+    //determined which key was pressed
     var userGuess = event.key;
 
+    //randomly chooses a choice from the array
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-
+    //game logic
     if ((userGuess === "r") || (userGuess === "p") || (userGuess === "s")) {
 
         if ((userGuess === "r" && computerGuess === "s") ||
@@ -32,7 +34,7 @@ document.onkeyup = function (event) {
             lost++;
         }
 
-
+        //displays the outcome and the user and computer choices. 
         userChoiceText.textContent = "You chose: " + userGuess;
         computerChoiceText.textContent = "The computer chose: " + computerGuess;
         winsText.textContent = "wins: " + wins;
