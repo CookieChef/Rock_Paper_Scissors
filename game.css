@@ -1,3 +1,7 @@
 .container {
     font-family: 'IM Fell Great Primer SC', serif;
 }
+
+.jumbotron {
+    background-color: transparent;
+}
