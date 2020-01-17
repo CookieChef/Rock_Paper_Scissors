@@ -31,4 +31,12 @@ document.onkeyup = function (event) {
             }else {
                 lost++;
             }
-    }
+
+            
+        userChoiceText.textContent = "You chose: " + userGuess;
+        computerChoiceText.textContent = "The computer chose: " + computerGuess;
+        winsText.textContent = "wins: " + wins;
+        lostText.textContent = "losses: " + lost;
+        tiesText.textContent = "ties: " + ties;
+            
+    }}

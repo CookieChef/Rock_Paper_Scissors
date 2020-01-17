@@ -5,3 +5,8 @@
 .jumbotron {
     background-color: transparent;
 }
+
+#card {
+    width: 18rem;
+    border-color: transparent;
+}
