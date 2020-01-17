@@ -2,7 +2,7 @@ console.log("Connected");
 
 //This is an array containing the possible choices to chose from.
 var computerChoices = ["r", "p", "s"];
-    
+
 //variables to hold the number of wins, lost or ties. 
 var wins = 0;
 var lost = 0;
@@ -20,23 +20,24 @@ document.onkeyup = function (event) {
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
 
-    if ((userGuess === "r") || (userGuess === "p") || (userGuess ==="s")) {
+    if ((userGuess === "r") || (userGuess === "p") || (userGuess === "s")) {
 
-        if((userGuess === "r" && computerGuess === "s") ||
+        if ((userGuess === "r" && computerGuess === "s") ||
             (userGuess === "s" && computerGuess === "p") ||
             (userGuess === "p" && computerGuess === "r")) {
-                wins++;
-            }else if (userGuess === computerGuess) {
-                ties++;
-            }else {
-                lost++;
-            }
+            wins++;
+        } else if (userGuess === computerGuess) {
+            ties++;
+        } else {
+            lost++;
+        }
 
-            
+
         userChoiceText.textContent = "You chose: " + userGuess;
         computerChoiceText.textContent = "The computer chose: " + computerGuess;
         winsText.textContent = "wins: " + wins;
         lostText.textContent = "losses: " + lost;
         tiesText.textContent = "ties: " + ties;
-            
-    }}
+
+    }
+}
