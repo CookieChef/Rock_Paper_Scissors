@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(43, 47, 53);
+    color:rgb(198, 201, 206);
+}
 .container {
     font-family: 'IM Fell Great Primer SC', serif;
     
@@ -5,7 +9,7 @@
 
 .jumbotron {
     background-color: transparent;
-    border: 2px solid #84ADBC;
+    /* border: 2px solid #84ADBC; */
 }
 
 #card {
