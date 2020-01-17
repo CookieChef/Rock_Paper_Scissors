@@ -1,12 +1,17 @@
 .container {
     font-family: 'IM Fell Great Primer SC', serif;
+    
 }
 
 .jumbotron {
     background-color: transparent;
+    border-color: #84ADBC;
+    border-style: mixed;
+    border-width: 2px;
 }
 
 #card {
     width: 18rem;
     border-color: transparent;
+    font-size: 20px;
 }
