@@ -37,11 +37,34 @@
             <p class="lead">This is a simple rock, paper, scissors game. Do you think you can beat the computer?</p>
             <hr class="my-4">
             <p>Let's see what you got!</p>
-            <a class="btn btn-outline-success" href="#" role="button" id="play">▷ Start!!</a>
+            <a class="btn btn-outline-success" href="#" role="button" id="playGame">▷ Start!!</a>
         </div>
     </div>
 
-<script src="game.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <p id="wins">Wins: </p>
+                        <p id="lost">Lost: </p>
+                        <p id="ties">Ties: </p>
+                    </div>
+                </div>      
+        </div>
+
+        <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p id="userChoice">You chose: </p>
+                    <p id="computerChoice">Your opponent chose: </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="game.js"></script>
 </body>
 
 </html>
