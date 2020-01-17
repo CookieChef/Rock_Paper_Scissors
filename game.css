@@ -17,3 +17,16 @@ body {
     border-color: transparent;
     font-size: 20px;
 }
+.choices{
+    text-align: center;
+}
+.choice {
+    border: 4px solid white;
+    border-radius: 50%;
+    margin: 0 20px;
+    padding: 10px;
+    display: inline-block;
+}
+.choice:hover {
+    background-color:rgb(198, 201, 206);
+}
