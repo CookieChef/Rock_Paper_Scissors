@@ -39,4 +39,4 @@ Game Link: https://cookiechef.github.io/Rock_Paper_Scissors/
 
 
 
-![Rock_Paper_Scissors](images\R_/_S_app.png)
+![Rock_Paper_Scissors](images/R_P_S_app.png)
