@@ -1,4 +1,4 @@
-console.log("Connected");
+console.log("Thank you for playing and looking at this application!");
 
 //variables to hold the number of wins, lost or ties. 
 var wins = 0;
@@ -69,6 +69,7 @@ function main() {
     scissors.addEventListener("click", function () {
         game("s");
     })
+
 }
 
 main();
