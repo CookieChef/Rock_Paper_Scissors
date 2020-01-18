@@ -1,8 +1,5 @@
 console.log("Connected");
 
-//This is an array containing the possible choices to chose from.
-var computerChoices = ["r", "p", "s"];
-
 //variables to hold the number of wins, lost or ties. 
 var wins = 0;
 var lost = 0;
@@ -13,45 +10,56 @@ var lostText = document.getElementById("lost");
 var tiesText = document.getElementById("ties");
 var userChoiceText = document.getElementById("userChoice");
 var computerChoiceText = document.getElementById("computerChoice");
-
 var rock = document.getElementById("r");
 var paper = document.getElementById("p");
 var scissors = document.getElementById("s");
 
-function main () {
+//gererates a random computer choice.
+function computerSelection() {
+    //This is an array containing the possible choices to chose from.
+    var computerChoices = ["r", "p", "s"];
+    var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+    return computerGuess;
+    
+}
+
+
+function game(userChoice) {
+    var computerChoice = computerSelection();
+    
+    if ((userChoice === "r") || (userChoice === "p") || (userChoice === "s")) {
+
+            if ((userChoice === "r" && computerChoice === "s") ||
+                (userChoice === "s" && computerChoice === "p") ||
+                (userChoice === "p" && computerChoice === "r")) {
+                wins++;
+                console.log("wins" + wins);
+            } else if (userChoice === computerChoice) {
+                ties++;
+                console.log("ties:" + ties);
+            } else {
+                lost++;
+                console.log("lost: " + lost);
+            }
+}
+}
+
+function main() {
     rock.addEventListener("click", function () {
-        // game("r");
-        console.log("rock");
+        game("r");
     })
     paper.addEventListener("click", function () {
-        // game("p");
-        console.log("paper");
+        game("p");
     })
     scissors.addEventListener("click", function () {
-        // game("s");
-        console.log("scissors");
+        game("s");
     })
 }
 
 main();
-    //determined which key was pressed
-    //var userGuess = event.key;
 
-    //randomly chooses a choice from the array
-    var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-    //game logic
-    // if ((userGuess === "r") || (userGuess === "p") || (userGuess === "s")) {
 
-    //     if ((userGuess === "r" && computerGuess === "s") ||
-    //         (userGuess === "s" && computerGuess === "p") ||
-    //         (userGuess === "p" && computerGuess === "r")) {
-    //         wins++;
-    //     } else if (userGuess === computerGuess) {
-    //         ties++;
-    //     } else {
-    //         lost++;
-    //     }
 
         //displays the outcome and the user and computer choices. 
         // userChoiceText.textContent = "You chose: " + userGuess;
