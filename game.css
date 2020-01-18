@@ -30,3 +30,7 @@ body {
 .choice:hover {
     background-color:rgb(198, 201, 206);
 }
+.card {
+    background-color: transparent;
+    border-color: transparent;
+}
