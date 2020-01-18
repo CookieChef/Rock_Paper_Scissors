@@ -38,3 +38,5 @@ GitHub Repository: https://github.com/CookieChef/Rock_Paper_Scissors.git
 Game Link: https://cookiechef.github.io/Rock_Paper_Scissors/
 
 
+
+![Rock_Paper_Scissors](images\R_/_S_app.png)
