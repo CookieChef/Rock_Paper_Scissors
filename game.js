@@ -33,10 +33,10 @@ function game(userChoice) {
             (userChoice === "s" && computerChoice === "p") ||
             (userChoice === "p" && computerChoice === "r")) {
             wins++;
-            console.log("wins" + wins);
+            console.log("wins " + wins);
         } else if (userChoice === computerChoice) {
             ties++;
-            console.log("ties:" + ties);
+            console.log("ties: " + ties);
         } else {
             lost++;
             console.log("lost: " + lost);
