@@ -20,5 +20,21 @@ The main function is what determines if the user wins, loses or ties depending o
 
 After the choices are made and the functions retun the values the reuslts are then converted from letter to words and displayed in the DOM for the user to see.
 
+### Special thanks to:
+
+Icons:
+https://www.flaticon.com/free-icons/ & https://icons8.com/icons/ 
+
+Font:
+https://fonts.google.com/
+
+Front-End Library:
+https://getbootstrap.com/
+
 ### Important Links:
+
+GitHub Repository: https://github.com/CookieChef/Rock_Paper_Scissors.git
+
+Game Link: https://cookiechef.github.io/Rock_Paper_Scissors/
+
 
