@@ -10,4 +10,15 @@ The usual game rules apply:
     Rock beats Scissors.
     Paper beats Rock.
     Scissors beats Paper. 
-    Both select the same option will result in a tie. 
+    Both select the same option will result in a tie.
+
+## JavaScript
+
+When coding this game we first declare variables for the score (win, lose, tie), and then create variables that will retain the user choice based on event listeners and the oponent choice based on a random math function. 
+
+The main function is what determines if the user wins, loses or ties depending on the conditions of the if/else statements.
+
+After the choices are made and the functions retun the values the reuslts are then converted from letter to words and displayed in the DOM for the user to see.
+
+### Important Links:
+
